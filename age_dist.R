@@ -75,14 +75,21 @@ for (elect_name in electorates[1:7])
   plot_electorate(dat, elect_name, cols)
 
 # legend top right
+par(xpd=TRUE)
 plot(NULL, xlim=c(0,1), ylim=c(0,1), xaxt="n", yaxt="n", xlab="", ylab="", bty="n")
 legend(0, 0.8, legend=c("Female", "Male"), fill=grey(c(0.9,0.7)), bty="n", cex=1.5)
+y <- seq(0.1,0.85,by=0.05)
+rect(0.9,y,1,y+0.05,col=colour_map(y+0.025,0.5), border=NA)
+rect(0.9,0.1,1,0.1, lwd=0.5)
+text(0.95,1,"Right",cex=1.5)
+text(0.95,0,"Left",cex=1.5)
+par(xpd=FALSE)
 
-#or (elect_name in electorates[-(1:7)])
+for (elect_name in electorates[-(1:7)])
   plot_electorate(dat, elect_name, cols)
 
 # header and footer
-mtext("Age distribution of general electorates", outer=TRUE, at=0.5, adj=0.5, line=3, cex=2, side=3)
+mtext("Voting and age distribution of New Zealand electorates", outer=TRUE, at=0.5, adj=0.5, line=3, cex=2, side=3)
 mtext("@jmarshallnz", side=1, line=0, at=1, adj=1, cex=0.8, outer=TRUE)
 
 dev.off()
