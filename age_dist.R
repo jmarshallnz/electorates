@@ -27,7 +27,6 @@ elect_map <- matrix(party$Electorate[elect_wch], ncol=1)
 rownames(elect_map) <- electorates
 
 dat <- dat %>% mutate(Electorate = elect_map[Electorate,1])
-electorates <- unique(dat$Electorate)
 
 # party to left-right gauge
 left   <- c("Green.Party", "Labour.Party", "Internet.MANA")
@@ -35,11 +34,13 @@ right  <- c("National.Party", "ACT.New.Zealand", "Conservative")
 
 party$left <- rowSums(party[,names(party) %in% left])
 party$right <- rowSums(party[,names(party) %in% right])
-party$left > party$right
 
 party <- party %>% mutate(right_left = (right - left) / (right + left))
 
-dat <- dat %>% left_join(party %>% select(Electorate,right_left))
+dat <- dat %>% left_join(party %>% select(Electorate,right_left)) %>%
+               arrange(right_left)
+electorates <- unique(dat$Electorate)
+
 
 # colour mapping
 colour_ramp <- colorRamp(brewer.pal(11, "RdBu"), space="Lab")
