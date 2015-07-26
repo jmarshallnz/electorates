@@ -39,6 +39,26 @@ party <- party %>% mutate(right_left = (right - left) / (right + left))
 
 dat <- dat %>% left_join(party %>% select(Electorate,right_left)) %>%
                arrange(right_left)
+
+if (0) {
+  # work out the median ages
+  dat_w <- acast(dat, Electorate ~ Age, margins="Sex", fun.aggregate=sum, value.var="count")
+  median_age <- rowSums(dat_w) / 2
+  dat_w <- cbind(median_age, dat_w)
+  med_age <- apply(dat_w, 1, function(x) { approx(y=seq_along(x[-1]),x=cumsum(x[-1]), xout = x[1])$y } )
+  
+  med_age <- data.frame(Electorate=names(med_age), MedianAge=med_age)
+  
+  dat <- dat %>% left_join(med_age) %>% arrange(-MedianAge)
+  
+  # try clustering?
+  dat_w <- acast(dat, Electorate ~ Age, margins="Sex", fun.aggregate=sum, value.var="count")
+  hcl <- hclust(dist(dat_w))
+  plot(hcl)
+  hclust_ord <- data.frame(Electorate=hcl$labels[hcl$order], Order=seq_along(hcl$order))
+  dat <- dat %>% left_join(hclust_ord) %>% arrange(Order)
+}
+
 electorates <- unique(dat$Electorate)
 
 
