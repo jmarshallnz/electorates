@@ -78,12 +78,12 @@ for (elect_name in electorates[1:63])
 # legend top right
 par(xpd=TRUE)
 plot(NULL, xlim=c(0,1), ylim=c(0,1), xaxt="n", yaxt="n", xlab="", ylab="", bty="n")
-legend(0, 0.8, legend=c("Female", "Male"), fill=grey(c(0.9,0.7)), bty="n", cex=1.5)
-y <- seq(0.1,0.85,by=0.05)
-rect(0.9,y,1,y+0.05,col=colour_map(y+0.025,0.5), border=NA)
-rect(0.9,0.1,1,0.1, lwd=0.5)
-text(0.95,1,"Right",cex=1.5)
-text(0.95,0,"Left",cex=1.5)
+legend(0, 0.9, legend=c("Female", "Male"), fill=grey(c(0.9,0.7)), bty="n", cex=1.2, col="grey30", font=2)
+x <- seq(0,0.95,by=0.05)
+rect(x,0.2,x+0.05,0.3,col=colour_map(x+0.025,0.8), border=NA)
+rect(0,0.2,1,0.3, lwd=0.5)
+text(0,.15,"Left",cex=1.3, font=2, adj=c(0,1), col="grey30")
+text(1,.15,"Right",cex=1.3, font=2, adj=c(1,1), col="grey30")
 par(xpd=FALSE)
 
 # last ones
