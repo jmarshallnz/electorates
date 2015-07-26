@@ -8,7 +8,7 @@ library(RColorBrewer)
 dat <- read.csv("csv/Age group and sex by general electorate.csv", stringsAsFactors=FALSE)
 dat_m <- read.csv("csv/Age group and sex by Māori electorate.csv", stringsAsFactors=FALSE)
 
-party <- read.csv("../nzpol/swing/data/party2014.csv", stringsAsFactors=FALSE) %>% rename(Electorate=X)
+party <- read.csv("party2014.csv", stringsAsFactors=FALSE) %>% rename(Electorate=X)
 
 dat <- dat %>% select(-level2)
 dat <- rbind(dat, dat_m)
