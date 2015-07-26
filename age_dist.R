@@ -69,10 +69,10 @@ plot_electorate <- function(dat, elect_name, cols) {
 cols <- c("seashell2", "wheat3")
 
 png("age_dist.png", width=960, height=1280)
-par(mfrow=c(9,8), mar=c(3,1,2,1), omi=c(0.25,0.25,1,0.25))
+par(mfcol=c(9,8), mar=c(3,1,2,1), omi=c(0.25,0.25,1,0.25))
 
-# first 7
-for (elect_name in electorates[1:7])
+# first ones
+for (elect_name in electorates[1:63])
   plot_electorate(dat, elect_name, cols)
 
 # legend top right
@@ -86,7 +86,8 @@ text(0.95,1,"Right",cex=1.5)
 text(0.95,0,"Left",cex=1.5)
 par(xpd=FALSE)
 
-for (elect_name in electorates[-(1:7)])
+# last ones
+for (elect_name in electorates[-(1:63)])
   plot_electorate(dat, elect_name, cols)
 
 # header and footer
