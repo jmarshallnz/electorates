@@ -61,7 +61,7 @@ plot_electorate <- function(dat, elect_name, cols) {
   
   plot(NULL, xlim=c(0,100), ylim=c(-0.1,0.1), xlab="", ylab="",
        yaxt="n", xaxs="i", bty="n", fg="grey60", col.axis="grey60")
-# mtext(elect_name, side=3, at=50, font=2, cex=0.9, line=-0.5, col="grey30")
+  mtext(elect_name, side=3, at=50, font=2, cex=0.9, line=-0.5, col="grey30")
   rect(seq(0,85,by=5), 0, seq(5,90,by=5), females$count/total, col=col_f, lwd=0.5)
   rect(seq(0,85,by=5), 0, seq(5,90,by=5), -males$count/total, col=col_m, lwd=0.5)
 }
