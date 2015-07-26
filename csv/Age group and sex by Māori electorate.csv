@@ -18,7 +18,6 @@
 "80–84 Years","Hauraki-Waikato","Male",168
 "85 Years And Over","Hauraki-Waikato","Male",66
 "18 Years And Over","Hauraki-Waikato","Male",25428
-"Median age","Hauraki-Waikato","Male",21.5
 "0–4 Years","Ikaroa-Rāwhiti","Male",4926
 "5–9 Years","Ikaroa-Rāwhiti","Male",4881
 "10–14 Years","Ikaroa-Rāwhiti","Male",4740
@@ -38,7 +37,6 @@
 "80–84 Years","Ikaroa-Rāwhiti","Male",210
 "85 Years And Over","Ikaroa-Rāwhiti","Male",87
 "18 Years And Over","Ikaroa-Rāwhiti","Male",23136
-"Median age","Ikaroa-Rāwhiti","Male",22.6
 "0–4 Years","Tāmaki Makaurau","Male",5235
 "5–9 Years","Tāmaki Makaurau","Male",4800
 "10–14 Years","Tāmaki Makaurau","Male",4416
@@ -58,7 +56,6 @@
 "80–84 Years","Tāmaki Makaurau","Male",114
 "85 Years And Over","Tāmaki Makaurau","Male",57
 "18 Years And Over","Tāmaki Makaurau","Male",24891
-"Median age","Tāmaki Makaurau","Male",22.8
 "0–4 Years","Te Tai Hauāuru","Male",5982
 "5–9 Years","Te Tai Hauāuru","Male",5685
 "10–14 Years","Te Tai Hauāuru","Male",5484
@@ -78,7 +75,6 @@
 "80–84 Years","Te Tai Hauāuru","Male",213
 "85 Years And Over","Te Tai Hauāuru","Male",93
 "18 Years And Over","Te Tai Hauāuru","Male",26727
-"Median age","Te Tai Hauāuru","Male",21.9
 "0–4 Years","Te Tai Tokerau","Male",5793
 "5–9 Years","Te Tai Tokerau","Male",5289
 "10–14 Years","Te Tai Tokerau","Male",5268
@@ -98,7 +94,6 @@
 "80–84 Years","Te Tai Tokerau","Male",252
 "85 Years And Over","Te Tai Tokerau","Male",114
 "18 Years And Over","Te Tai Tokerau","Male",26802
-"Median age","Te Tai Tokerau","Male",22.9
 "0–4 Years","Te Tai Tonga","Male",7095
 "5–9 Years","Te Tai Tonga","Male",6723
 "10–14 Years","Te Tai Tonga","Male",6240
@@ -118,7 +113,6 @@
 "80–84 Years","Te Tai Tonga","Male",237
 "85 Years And Over","Te Tai Tonga","Male",117
 "18 Years And Over","Te Tai Tonga","Male",36651
-"Median age","Te Tai Tonga","Male",23.3
 "0–4 Years","Waiariki","Male",4743
 "5–9 Years","Waiariki","Male",4791
 "10–14 Years","Waiariki","Male",4671
@@ -138,7 +132,6 @@
 "80–84 Years","Waiariki","Male",204
 "85 Years And Over","Waiariki","Male",99
 "18 Years And Over","Waiariki","Male",22845
-"Median age","Waiariki","Male",23.1
 "0–4 Years","Area Outside Māori Electorate","Male",NA
 "5–9 Years","Area Outside Māori Electorate","Male",NA
 "10–14 Years","Area Outside Māori Electorate","Male",NA
@@ -158,7 +151,6 @@
 "80–84 Years","Area Outside Māori Electorate","Male",NA
 "85 Years And Over","Area Outside Māori Electorate","Male",NA
 "18 Years And Over","Area Outside Māori Electorate","Male",NA
-"Median age","Area Outside Māori Electorate","Male",NA
 "0–4 Years","Hauraki-Waikato","Female",5508
 "5–9 Years","Hauraki-Waikato","Female",5268
 "10–14 Years","Hauraki-Waikato","Female",4977
@@ -178,7 +170,6 @@
 "80–84 Years","Hauraki-Waikato","Female",282
 "85 Years And Over","Hauraki-Waikato","Female",153
 "18 Years And Over","Hauraki-Waikato","Female",30930
-"Median age","Hauraki-Waikato","Female",25.1
 "0–4 Years","Ikaroa-Rāwhiti","Female",4887
 "5–9 Years","Ikaroa-Rāwhiti","Female",4749
 "10–14 Years","Ikaroa-Rāwhiti","Female",4617
@@ -198,7 +189,6 @@
 "80–84 Years","Ikaroa-Rāwhiti","Female",294
 "85 Years And Over","Ikaroa-Rāwhiti","Female",177
 "18 Years And Over","Ikaroa-Rāwhiti","Female",28035
-"Median age","Ikaroa-Rāwhiti","Female",26.4
 "0–4 Years","Tāmaki Makaurau","Female",4899
 "5–9 Years","Tāmaki Makaurau","Female",4569
 "10–14 Years","Tāmaki Makaurau","Female",4206
@@ -218,7 +208,6 @@
 "80–84 Years","Tāmaki Makaurau","Female",240
 "85 Years And Over","Tāmaki Makaurau","Female",144
 "18 Years And Over","Tāmaki Makaurau","Female",30930
-"Median age","Tāmaki Makaurau","Female",26
 "0–4 Years","Te Tai Hauāuru","Female",5697
 "5–9 Years","Te Tai Hauāuru","Female",5331
 "10–14 Years","Te Tai Hauāuru","Female",5145
@@ -238,7 +227,6 @@
 "80–84 Years","Te Tai Hauāuru","Female",306
 "85 Years And Over","Te Tai Hauāuru","Female",189
 "18 Years And Over","Te Tai Hauāuru","Female",31467
-"Median age","Te Tai Hauāuru","Female",25.7
 "0–4 Years","Te Tai Tokerau","Female",5460
 "5–9 Years","Te Tai Tokerau","Female",5256
 "10–14 Years","Te Tai Tokerau","Female",4911
@@ -258,7 +246,6 @@
 "80–84 Years","Te Tai Tokerau","Female",375
 "85 Years And Over","Te Tai Tokerau","Female",225
 "18 Years And Over","Te Tai Tokerau","Female",31764
-"Median age","Te Tai Tokerau","Female",27
 "0–4 Years","Te Tai Tonga","Female",6630
 "5–9 Years","Te Tai Tonga","Female",6246
 "10–14 Years","Te Tai Tonga","Female",6057
@@ -278,7 +265,6 @@
 "80–84 Years","Te Tai Tonga","Female",321
 "85 Years And Over","Te Tai Tonga","Female",204
 "18 Years And Over","Te Tai Tonga","Female",39537
-"Median age","Te Tai Tonga","Female",25.2
 "0–4 Years","Waiariki","Female",4365
 "5–9 Years","Waiariki","Female",4566
 "10–14 Years","Waiariki","Female",4437
@@ -298,7 +284,6 @@
 "80–84 Years","Waiariki","Female",354
 "85 Years And Over","Waiariki","Female",189
 "18 Years And Over","Waiariki","Female",27765
-"Median age","Waiariki","Female",27.9
 "0–4 Years","Area Outside Māori Electorate","Female",NA
 "5–9 Years","Area Outside Māori Electorate","Female",NA
 "10–14 Years","Area Outside Māori Electorate","Female",NA
@@ -318,4 +303,3 @@
 "80–84 Years","Area Outside Māori Electorate","Female",NA
 "85 Years And Over","Area Outside Māori Electorate","Female",NA
 "18 Years And Over","Area Outside Māori Electorate","Female",NA
-"Median age","Area Outside Māori Electorate","Female",NA

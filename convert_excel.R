@@ -121,11 +121,11 @@ for (sheet_num in 2:length(sheets)) {
   # convert to long format
   sheet <- melt(sheet, value.name="count")
   
-  # kill anything with total in it
+  # kill anything with 'total' or 'median' in it
   data_cols <- (1:ncol(sheet))[names(sheet) != "count"]
   for (i in data_cols) {
-    total_rows <- grepl("^total.*", sheet[,i], ignore.case=TRUE)
-    sheet <- sheet[!total_rows,]
+    kill_rows <- grepl("^(total|median).*", sheet[,i], ignore.case=TRUE)
+    sheet <- sheet[!kill_rows,]
   }
   
   names(sheet)[names(sheet) == "variable"] <- inner_var
