@@ -133,7 +133,7 @@ for (sheet_num in 2:length(sheets)) {
   # can infer other variables with knowledge of the table only
   # unfortuantely. We'll add them to the filename
   csv_name <- paste0(inner_var, " by ", paste(level_var, collapse=", "), ".csv")
-  write.csv(sheet, csv_name, row.names=FALSE)
+  write.csv(sheet, file.path("csv", csv_name), row.names=FALSE)
   
   all[[sheet_num]] <- sheet
 }
