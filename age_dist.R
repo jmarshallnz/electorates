@@ -79,15 +79,17 @@ plot_electorate <- function(dat, elect_name, cols) {
   total <- sum(electorate$count)
 
   # work out the colour for this electorate
-  value <- (electorate$right_left[1] + 1)/2
-  col_f <- colour_map(value, 0.4)
-  col_m <- colour_map(value, 0.8)
-  
-  plot(NULL, xlim=c(0,100), ylim=c(-0.1,0.1), xlab="", ylab="",
+  col <- (electorate$right_left[1] + 1)/2
+#  col_f <- colour_map(value, 0.3)
+#  col_m <- colour_map(value, 0.6)
+
+  plot(NULL, xlim=c(0,100), ylim=c(0,0.1), xlab="", ylab="",
        yaxt="n", xaxs="i", bty="n", fg="grey60", col.axis="grey60")
   mtext(elect_name, side=3, at=50, font=2, cex=0.9, line=-0.5, col="grey30")
-  rect(seq(0,85,by=5), 0, seq(5,90,by=5), females$count/total, col=col_f, lwd=0.5)
-  rect(seq(0,85,by=5), 0, seq(5,90,by=5), -males$count/total, col=col_m, lwd=0.5)
+  polygon(c(0,0,seq(5,80,by=5)+2.5,90,90), c(0, males$count, 0)/total, col=colour_map(col, 0.6), border=NA)
+  polygon(c(0,0,seq(5,80,by=5)+2.5,90,90), c(0, females$count, 0)/total, col=colour_map(col, 0.3), border=NA)
+  lines(c(0,seq(5,80,by=5)+2.5,90), males$count/total, col=darken(col, 0.7), lwd=1.5)
+  lines(c(0,seq(5,80,by=5)+2.5,90), females$count/total, col=darken(col, 0.8), lwd=1.5)
 }
 
 cols <- c("seashell2", "wheat3")
