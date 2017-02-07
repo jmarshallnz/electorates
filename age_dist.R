@@ -68,6 +68,10 @@ colour_map <- function(x, alpha) {
   rgb(colour_ramp(x), alpha = 255*alpha, max=255)
 }
 
+darken <- function(x, amount) {
+  rgb(colour_ramp(x)*amount, max=255)
+}
+
 plot_electorate <- function(dat, elect_name, cols) {
   electorate <- dat %>% filter(Electorate == elect_name)
   males <- electorate %>% filter(Sex == "Male")
